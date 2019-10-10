@@ -29,9 +29,9 @@ def crypto_scrapper(page)
   arr = []
   i = 0
   puts "Patiente un peu stp, c'est long mais ca marche ! Je ne te montre que 50 crypto pour que tu ne passe pas la journee a attendre :)"
-  50.times do  #I put 50 because it is too long to go through 2000 - remplace 50 par "crypto_name.each" pour tout afficher
+  50.times do |i|  #I put 50 because it is too long to go through 2000 - remplace 50 par "crypto_name.each" pour tout afficher
   arr.push ("{#{crypto_names(page)[i]} => #{crypto_prices(page)[i]}}")
- i = i+1
+
   end
   return arr
 end
